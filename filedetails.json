@@ -1,7 +1,7 @@
 
 "ovpn_file":[ {"id":0,"file":"client
 dev tun
-proto tcp
+proto udp
 remote 49.213.16.12 443
 resolv-retry infinite
 remote-cert-tls server

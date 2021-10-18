@@ -127,10 +127,6 @@ resolv-retry infinite
 nobind
 persist-key
 persist-tun
-<auth-user-pass>
-vpnbook
-8shx95n
-</auth-user-pass>
 comp-lzo
 verb 3
 cipher AES-128-CBC

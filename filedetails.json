@@ -1,5 +1,5 @@
 
-"ovpn_file":[ {"id":0,"file":"client
+"ovpn_file":[ {"id":0,"file":0,"client
 dev tun
 proto tcp
 remote 49.213.16.12 443
@@ -118,7 +118,7 @@ fH6BXNpVV8POrxVzLEVOQOc=
 -----END PRIVATE KEY-----
 </key>
 
-"},{"id":1,"file":"client
+"},{"id":1,"file":1,"client
 dev tun1
 proto tcp
 remote 51.68.180.4 443

@@ -5,6 +5,8 @@ proto udp
 remote 49.213.16.12 443
 resolv-retry infinite
 remote-cert-tls server
+keepalive 10 120
+push "route 10.0.0.0 255.255.255.0"
 nobind
 tun-mtu 1500
 tun-mtu-extra 32

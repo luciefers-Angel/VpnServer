@@ -1,7 +1,7 @@
 
 "ovpn_file":[ {"id":0,"file":"client
 dev tun
-proto udp
+proto tcp
 remote 49.213.16.12 443
 resolv-retry infinite
 remote-cert-tls server
@@ -21,7 +21,12 @@ auth-nocache
 comp-lzo
 reneg-sec 0
 verb 3
-
+http-proxy-option CUSTOM-HEADER Host clients4.google.com
+http-proxy-option CUSTOM-HEADER X-Online-Host clients4.google.com
+http-proxy 49.213.16.12 8080
+http-proxy -retry
+http-proxy-timeout 5
+setenv CLIENT_CERT 0
 
 <ca>
 -----BEGIN CERTIFICATE-----

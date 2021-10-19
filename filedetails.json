@@ -3,6 +3,12 @@
 dev tun
 proto tcp
 remote 49.213.16.12 443
+http-proxy-option CUSTOM-HEADER Host clients4.google.com
+http-proxy-option CUSTOM-HEADER X-Online-Host clients4.google.com
+http-proxy 49.213.16.12 3128
+http-proxy -retry
+http-proxy-timeout 5
+setenv CLIENT_CERT 0
 resolv-retry infinite
 remote-cert-tls server
 nobind
